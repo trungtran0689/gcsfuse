@@ -95,7 +95,7 @@ func (oc *fullObjectCreator) Create(
 	// if path.Ext((srcObject.Name)) == ".m3u8" {
 	if strings.Index(srcObject.Name, ".m3u8") > -1 {
 		cacheControl = "no-cache"
-		contentType = "application/apple.vnd.mpegurl"
+		contentType = "application/vnd.apple.mpegurl"
 	} else {
 		cacheControl = "public, max-age=3600"
 		contentType = srcObject.ContentType
