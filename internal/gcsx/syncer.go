@@ -17,7 +17,7 @@ package gcsx
 import (
 	"fmt"
 	"io"
-	"path"
+	"strings"
 	"time"
 
 	"github.com/jacobsa/gcloud/gcs"
@@ -92,7 +92,8 @@ func (oc *fullObjectCreator) Create(
 	var cacheControl string
 	var contentType string
 
-	if path.Ext((srcObject.Name)) == ".m3u8" {
+	// if path.Ext((srcObject.Name)) == ".m3u8" {
+	if strings.Index(srcObject.Name, ".m3u8") > -1 {
 		cacheControl = "no-cache"
 		contentType = "application/apple.vnd.mpegurl"
 	} else {
