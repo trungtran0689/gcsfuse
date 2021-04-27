@@ -205,9 +205,6 @@ func (bm *bucketManager) SetUpBucket(
 	// Enable content type awareness
 	b = NewContentTypeBucket(b)
 
-	// Handle cache-control
-	b = NewCacheBucket(b)
-
 	// Enable monitoring
 	if bm.config.EnableMonitoring {
 		b = NewMonitoringBucket(b)

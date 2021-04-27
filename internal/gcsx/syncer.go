@@ -17,6 +17,7 @@ package gcsx
 import (
 	"fmt"
 	"io"
+	"path"
 	"time"
 
 	"github.com/jacobsa/gcloud/gcs"
@@ -87,6 +88,18 @@ func (oc *fullObjectCreator) Create(
 	srcObject *gcs.Object,
 	mtime time.Time,
 	r io.Reader) (o *gcs.Object, err error) {
+
+	var cacheControl string
+	var contentType string
+
+	if path.Ext((srcObject.Name)) == "m3u8" {
+		cacheControl = "no-cache"
+		contentType = "application/apple.vnd.mpegurl"
+	} else {
+		cacheControl = "public, max-age=3600"
+		contentType = srcObject.ContentType
+	}
+
 	req := &gcs.CreateObjectRequest{
 		Name:                       srcObject.Name,
 		GenerationPrecondition:     &srcObject.Generation,
@@ -95,7 +108,8 @@ func (oc *fullObjectCreator) Create(
 		Metadata: map[string]string{
 			MtimeMetadataKey: mtime.Format(time.RFC3339Nano),
 		},
-		// CacheControl: "no-cache",
+		CacheControl: cacheControl,
+		ContentType:  contentType,
 	}
 
 	o, err = oc.bucket.CreateObject(ctx, req)
