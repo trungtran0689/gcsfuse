@@ -40,6 +40,10 @@ func (b contentTypeBucket) CreateObject(
 		req.ContentType = mime.TypeByExtension(path.Ext(req.Name))
 	}
 
+	if path.Ext(req.Name) == "m3u8" {
+		req.ContentType = "application/apple.vnd.mpegurl"
+	}
+
 	// Pass on the request.
 	o, err = b.Bucket.CreateObject(ctx, req)
 	return
@@ -51,6 +55,10 @@ func (b contentTypeBucket) ComposeObjects(
 	// Guess a content type if necessary.
 	if req.ContentType == "" {
 		req.ContentType = mime.TypeByExtension(path.Ext(req.DstName))
+	}
+
+	if path.Ext(req.DstName) == "m3u8" {
+		req.ContentType = "application/apple.vnd.mpegurl"
 	}
 
 	// Pass on the request.
