@@ -87,7 +87,6 @@ func (oc *fullObjectCreator) Create(
 	srcObject *gcs.Object,
 	mtime time.Time,
 	r io.Reader) (o *gcs.Object, err error) {
-
 	req := &gcs.CreateObjectRequest{
 		Name:                       srcObject.Name,
 		GenerationPrecondition:     &srcObject.Generation,
@@ -96,7 +95,7 @@ func (oc *fullObjectCreator) Create(
 		Metadata: map[string]string{
 			MtimeMetadataKey: mtime.Format(time.RFC3339Nano),
 		},
-		CacheControl: "no-cache",
+		// CacheControl: "no-cache",
 	}
 
 	o, err = oc.bucket.CreateObject(ctx, req)
