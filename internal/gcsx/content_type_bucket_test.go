@@ -18,10 +18,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/gcsx"
 	"github.com/jacobsa/gcloud/gcs"
 	"github.com/jacobsa/gcloud/gcs/gcsfake"
 	"github.com/jacobsa/timeutil"
+	"github.com/trungtran0689/gcsfuse/internal/gcsx"
 	"golang.org/x/net/context"
 )
 

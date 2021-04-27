@@ -28,9 +28,9 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/googlecloudplatform/gcsfuse/benchmarks/internal/format"
 	"github.com/jacobsa/fuse/fsutil"
 	"github.com/jacobsa/syncutil"
+	"github.com/trungtran0689/gcsfuse/benchmarks/internal/format"
 )
 
 var fDir = flag.String("dir", "", "Directory within which to create the files.")

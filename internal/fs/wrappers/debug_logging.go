@@ -18,9 +18,9 @@ import (
 	"context"
 	"log"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/logger"
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/fuse/fuseutil"
+	"github.com/trungtran0689/gcsfuse/internal/logger"
 )
 
 // WithDebugLogging wraps a FileSystem, logging the debug messages for the

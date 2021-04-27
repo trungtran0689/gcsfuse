@@ -19,10 +19,10 @@ import (
 
 	"github.com/jacobsa/fuse"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/gcsx"
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/fuse/fuseutil"
 	"github.com/jacobsa/gcloud/gcs"
+	"github.com/trungtran0689/gcsfuse/internal/gcsx"
 	"golang.org/x/net/context"
 )
 

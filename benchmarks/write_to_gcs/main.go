@@ -27,7 +27,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/googlecloudplatform/gcsfuse/benchmarks/internal/format"
+	"github.com/trungtran0689/gcsfuse/benchmarks/internal/format"
 )
 
 var fDir = flag.String("dir", "", "Directory within which to write the file.")

@@ -22,9 +22,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/logger"
+	"github.com/trungtran0689/gcsfuse/internal/logger"
 )
-
 
 func HandleCPUProfileSignals() {
 	profileOnce := func(duration time.Duration, path string) (err error) {

@@ -18,8 +18,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/googlecloudplatform/gcsfuse/benchmarks/internal/percentile"
 	. "github.com/jacobsa/ogletest"
+	"github.com/trungtran0689/gcsfuse/benchmarks/internal/percentile"
 )
 
 func TestDuration(t *testing.T) { RunTests(t) }

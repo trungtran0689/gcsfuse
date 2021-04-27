@@ -32,17 +32,17 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/auth"
-	"github.com/googlecloudplatform/gcsfuse/internal/canned"
-	"github.com/googlecloudplatform/gcsfuse/internal/gcsx"
-	"github.com/googlecloudplatform/gcsfuse/internal/logger"
-	"github.com/googlecloudplatform/gcsfuse/internal/perf"
 	"github.com/jacobsa/daemonize"
 	"github.com/jacobsa/fuse"
 	"github.com/jacobsa/gcloud/gcs"
 	"github.com/jacobsa/syncutil"
 	"github.com/kardianos/osext"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"github.com/trungtran0689/gcsfuse/internal/auth"
+	"github.com/trungtran0689/gcsfuse/internal/canned"
+	"github.com/trungtran0689/gcsfuse/internal/gcsx"
+	"github.com/trungtran0689/gcsfuse/internal/logger"
+	"github.com/trungtran0689/gcsfuse/internal/perf"
 	"github.com/urfave/cli"
 )
 

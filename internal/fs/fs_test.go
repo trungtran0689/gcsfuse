@@ -29,16 +29,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/fs"
-	"github.com/googlecloudplatform/gcsfuse/internal/gcsx"
-	"github.com/googlecloudplatform/gcsfuse/internal/logger"
-	"github.com/googlecloudplatform/gcsfuse/internal/perms"
 	"github.com/jacobsa/fuse"
 	"github.com/jacobsa/gcloud/gcs"
 	"github.com/jacobsa/gcloud/gcs/gcsfake"
 	"github.com/jacobsa/gcloud/gcs/gcsutil"
 	. "github.com/jacobsa/ogletest"
 	"github.com/jacobsa/timeutil"
+	"github.com/trungtran0689/gcsfuse/internal/fs"
+	"github.com/trungtran0689/gcsfuse/internal/gcsx"
+	"github.com/trungtran0689/gcsfuse/internal/logger"
+	"github.com/trungtran0689/gcsfuse/internal/perms"
 	"golang.org/x/net/context"
 )
 

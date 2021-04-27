@@ -23,8 +23,6 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/fs/inode"
-	"github.com/googlecloudplatform/gcsfuse/internal/gcsx"
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/fuse/fuseutil"
 	"github.com/jacobsa/gcloud/gcs"
@@ -33,6 +31,8 @@ import (
 	. "github.com/jacobsa/oglematchers"
 	. "github.com/jacobsa/ogletest"
 	"github.com/jacobsa/timeutil"
+	"github.com/trungtran0689/gcsfuse/internal/fs/inode"
+	"github.com/trungtran0689/gcsfuse/internal/gcsx"
 )
 
 func TestDir(t *testing.T) { RunTests(t) }

@@ -44,7 +44,7 @@
 // For example,
 //
 //	github.com/Azure/azure-sdk-for-go ->  github.com/!azure/azure-sdk-for-go.
-//	github.com/GoogleCloudPlatform/cloudsql-proxy -> github.com/!google!cloud!platform/cloudsql-proxy
+//	github.com/Trungtran0689/cloudsql-proxy -> github.com/!google!cloud!platform/cloudsql-proxy
 //	github.com/Sirupsen/logrus -> github.com/!sirupsen/logrus.
 //
 // Import paths that avoid upper-case letters are left unchanged.

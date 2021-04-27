@@ -23,14 +23,13 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/logger"
+	"github.com/trungtran0689/gcsfuse/internal/logger"
 )
 
 const (
 	KiB = 1024
 	MiB = 1024 * KiB
 )
-
 
 func HandleMemoryProfileSignals() {
 	profileOnce := func(path string) (err error) {
@@ -70,7 +69,7 @@ func HandleMemoryProfileSignals() {
 
 		var m runtime.MemStats
 		runtime.ReadMemStats(&m)
-		logger.Infof("Heap allocation: %d MiB", m.Alloc / MiB)
+		logger.Infof("Heap allocation: %d MiB", m.Alloc/MiB)
 
 		err := profileOnce(path)
 		if err == nil {

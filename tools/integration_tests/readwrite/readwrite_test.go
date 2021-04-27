@@ -26,7 +26,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/googlecloudplatform/gcsfuse/tools/util"
+	"github.com/trungtran0689/gcsfuse/tools/util"
 )
 
 var testBucket = flag.String("testbucket", "", "The GCS bucket used for the test.")

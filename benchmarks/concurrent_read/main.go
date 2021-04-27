@@ -40,8 +40,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/logger"
-	"github.com/googlecloudplatform/gcsfuse/internal/perf"
+	"github.com/trungtran0689/gcsfuse/internal/logger"
+	"github.com/trungtran0689/gcsfuse/internal/perf"
 )
 
 var fIterations = flag.Int(

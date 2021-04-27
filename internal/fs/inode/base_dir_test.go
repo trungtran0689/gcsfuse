@@ -22,12 +22,12 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/fs/inode"
-	"github.com/googlecloudplatform/gcsfuse/internal/gcsx"
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/gcloud/gcs/gcsfake"
 	. "github.com/jacobsa/ogletest"
 	"github.com/jacobsa/timeutil"
+	"github.com/trungtran0689/gcsfuse/internal/fs/inode"
+	"github.com/trungtran0689/gcsfuse/internal/gcsx"
 )
 
 func TestBaseDir(t *testing.T) { RunTests(t) }

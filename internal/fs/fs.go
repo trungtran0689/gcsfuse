@@ -23,16 +23,16 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/fs/handle"
-	"github.com/googlecloudplatform/gcsfuse/internal/fs/inode"
-	"github.com/googlecloudplatform/gcsfuse/internal/gcsx"
-	"github.com/googlecloudplatform/gcsfuse/internal/logger"
 	"github.com/jacobsa/fuse"
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/fuse/fuseutil"
 	"github.com/jacobsa/gcloud/gcs"
 	"github.com/jacobsa/syncutil"
 	"github.com/jacobsa/timeutil"
+	"github.com/trungtran0689/gcsfuse/internal/fs/handle"
+	"github.com/trungtran0689/gcsfuse/internal/fs/inode"
+	"github.com/trungtran0689/gcsfuse/internal/gcsx"
+	"github.com/trungtran0689/gcsfuse/internal/logger"
 	"golang.org/x/net/context"
 )
 
@@ -1364,7 +1364,7 @@ func (fs *fileSystem) RmDir(
 	//
 	// Yes, this is not atomic with the delete below. See here for discussion:
 	//
-	//     https://github.com/GoogleCloudPlatform/gcsfuse/issues/9
+	//     https://github.com/Trungtran0689/gcsfuse/issues/9
 	//
 	//
 	var tok string

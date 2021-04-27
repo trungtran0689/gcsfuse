@@ -23,12 +23,12 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/canned"
-	"github.com/googlecloudplatform/gcsfuse/internal/logger"
 	"github.com/jacobsa/gcloud/gcs"
 	"github.com/jacobsa/gcloud/gcs/gcscaching"
 	"github.com/jacobsa/ratelimit"
 	"github.com/jacobsa/timeutil"
+	"github.com/trungtran0689/gcsfuse/internal/canned"
+	"github.com/trungtran0689/gcsfuse/internal/logger"
 )
 
 type BucketConfig struct {

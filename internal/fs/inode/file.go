@@ -20,11 +20,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/gcsx"
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/gcloud/gcs"
 	"github.com/jacobsa/syncutil"
 	"github.com/jacobsa/timeutil"
+	"github.com/trungtran0689/gcsfuse/internal/gcsx"
 	"golang.org/x/net/context"
 )
 

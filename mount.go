@@ -21,13 +21,13 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/fs"
-	"github.com/googlecloudplatform/gcsfuse/internal/gcsx"
-	"github.com/googlecloudplatform/gcsfuse/internal/logger"
-	"github.com/googlecloudplatform/gcsfuse/internal/perms"
 	"github.com/jacobsa/fuse"
 	"github.com/jacobsa/fuse/fsutil"
 	"github.com/jacobsa/timeutil"
+	"github.com/trungtran0689/gcsfuse/internal/fs"
+	"github.com/trungtran0689/gcsfuse/internal/gcsx"
+	"github.com/trungtran0689/gcsfuse/internal/logger"
+	"github.com/trungtran0689/gcsfuse/internal/perms"
 )
 
 // Mount the file system based on the supplied arguments, returning a

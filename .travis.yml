@@ -29,27 +29,27 @@ install: true
 #
 #  *  Clone the git repo into a temporary location.
 #  *  Check out the commit of interest.
-#  *  rsync the git repo to $GOPATH/src/github.com/GoogleCloudPlatform/gcsfuse
+#  *  rsync the git repo to $GOPATH/src/github.com/Trungtran0689/gcsfuse
 #
-# Note that the directory name is camel case, instead of `googlecloudplatform`,
+# Note that the directory name is camel case, instead of `trungtran0689`,
 # as used in our code to import sub-packages.
 #
 # Normally this is papered over by the fact that the default `install` step for
 # go does `go get -v ./...` from within  that directory. That winds up fetching
-# another copy into `$GOPATH/src/github.com/googlecloudplatform/gcsfuse`, so
+# another copy into `$GOPATH/src/github.com/trungtran0689/gcsfuse`, so
 # the imports resolve correctly. (But this is bad! We get the wrong versions if
 # commits are pushed quickly.)
 #
 # However we disabled the install step above, so this doesn't happen and
 # instead we get errors like the following:
 #
-#     mount.go:25:2: cannot find package "github.com/googlecloudplatform/gcsfuse/fs" in any of:
-#             /home/travis/gopath/src/github.com/GoogleCloudPlatform/gcsfuse/vendor/github.com/googlecloudplatform/gcsfuse/fs (vendor tree)
-#             /home/travis/.gimme/versions/go/src/github.com/googlecloudplatform/gcsfuse/fs (from $GOROOT)
-#             /home/travis/gopath/src/github.com/googlecloudplatform/gcsfuse/fs (from $GOPATH)
+#     mount.go:25:2: cannot find package "github.com/trungtran0689/gcsfuse/fs" in any of:
+#             /home/travis/gopath/src/github.com/Trungtran0689/gcsfuse/vendor/github.com/trungtran0689/gcsfuse/fs (vendor tree)
+#             /home/travis/.gimme/versions/go/src/github.com/trungtran0689/gcsfuse/fs (from $GOROOT)
+#             /home/travis/gopath/src/github.com/trungtran0689/gcsfuse/fs (from $GOPATH)
 #
 # Fix this by renaming the directory before testing.
 script:
   - cd $GOPATH/src/github.com/
-  - mv GoogleCloudPlatform googlecloudplatform
-  - go test -v github.com/googlecloudplatform/gcsfuse/...
+  - mv Trungtran0689 trungtran0689
+  - go test -v github.com/trungtran0689/gcsfuse/...

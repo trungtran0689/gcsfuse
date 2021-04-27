@@ -15,8 +15,8 @@
 package inode
 
 import (
-	"github.com/googlecloudplatform/gcsfuse/internal/gcsx"
 	"github.com/jacobsa/gcloud/gcs"
+	"github.com/trungtran0689/gcsfuse/internal/gcsx"
 )
 
 // BackObject is the object backing up the inode. A back object for a file inode

@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/gcsx"
 	. "github.com/jacobsa/oglematchers"
 	. "github.com/jacobsa/ogletest"
 	"github.com/jacobsa/timeutil"
+	"github.com/trungtran0689/gcsfuse/internal/gcsx"
 	"golang.org/x/net/context"
 )
 

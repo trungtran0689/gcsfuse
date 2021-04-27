@@ -23,7 +23,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/googlecloudplatform/gcsfuse/tools/util"
+	"github.com/trungtran0689/gcsfuse/tools/util"
 )
 
 // A directory containing outputs created by build_gcsfuse, set up and deleted

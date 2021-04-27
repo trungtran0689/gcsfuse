@@ -17,8 +17,8 @@ package inode_test
 import (
 	"testing"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/fs/inode"
 	. "github.com/jacobsa/ogletest"
+	"github.com/trungtran0689/gcsfuse/internal/fs/inode"
 )
 
 func TestName(t *testing.T) {

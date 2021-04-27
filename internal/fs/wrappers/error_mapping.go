@@ -21,9 +21,9 @@ import (
 	"net/http"
 	"syscall"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/logger"
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/fuse/fuseutil"
+	"github.com/trungtran0689/gcsfuse/internal/logger"
 	"google.golang.org/api/googleapi"
 )
 

@@ -20,7 +20,6 @@ import (
 	"path"
 	"time"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/fs/inode"
 	"github.com/jacobsa/fuse/fusetesting"
 	"github.com/jacobsa/gcloud/gcs"
 	"github.com/jacobsa/gcloud/gcs/gcscaching"
@@ -29,6 +28,7 @@ import (
 	. "github.com/jacobsa/oglematchers"
 	. "github.com/jacobsa/ogletest"
 	"github.com/jacobsa/timeutil"
+	"github.com/trungtran0689/gcsfuse/internal/fs/inode"
 )
 
 ////////////////////////////////////////////////////////////////////////

@@ -18,11 +18,11 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/fs/inode"
 	"github.com/jacobsa/fuse"
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/fuse/fuseutil"
 	"github.com/jacobsa/syncutil"
+	"github.com/trungtran0689/gcsfuse/internal/fs/inode"
 	"golang.org/x/net/context"
 )
 

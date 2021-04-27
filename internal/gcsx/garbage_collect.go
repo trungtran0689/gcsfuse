@@ -21,10 +21,10 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/logger"
 	"github.com/jacobsa/gcloud/gcs"
 	"github.com/jacobsa/gcloud/gcs/gcsutil"
 	"github.com/jacobsa/syncutil"
+	"github.com/trungtran0689/gcsfuse/internal/logger"
 )
 
 func garbageCollectOnce(

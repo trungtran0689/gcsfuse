@@ -20,7 +20,7 @@ ENV CGO_ENABLED=0
 ENV GOOS=linux
 
 ARG GCSFUSE_VERSION="master"
-ARG GCSFUSE_REPO="${GOPATH}/src/github.com/googlecloudplatform/gcsfuse/"
+ARG GCSFUSE_REPO="${GOPATH}/src/github.com/trungtran0689/gcsfuse/"
 ADD . ${GCSFUSE_REPO}
 
 WORKDIR ${GCSFUSE_REPO}
